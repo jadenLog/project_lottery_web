@@ -4,7 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "webpack-dev-server --env.ENVIRONMENT=local --config ./webpack/webpack.config.js --watch",
+        "test": "mocha",
+        "build": "webpack-dev-server --env.ENVIRONMENT=local --config ./webpack/webpack.config.js --watch",
         "prod": "webpack --env.ENVIRONMENT=prod --config ./webpack/webpack.config.prod.js"
     },
     "repository": {
@@ -69,6 +70,7 @@
         "@babel/preset-react": "^7.6.3",
         "babel-eslint": "^10.0.3",
         "babel-loader": "^8.0.6",
+        "chai": "^4.2.0",
         "dotenv": "^8.1.0",
         "eslint": "^6.1.0",
         "eslint-config-airbnb": "^18.0.1",
@@ -81,6 +83,7 @@
         "eslint-plugin-react": "^7.16.0",
         "eslint-plugin-react-hooks": "^1.7.0",
         "html-webpack-plugin": "^3.2.0",
+        "mocha": "^7.1.1",
         "prettier": "^1.18.2",
         "react-hot-loader": "^4.12.15",
         "terser-webpack-plugin": "^2.1.2",
